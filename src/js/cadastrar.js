@@ -1,7 +1,30 @@
+// getElementById, addEventListener, objetos
+
+// addEvent
+
+
+
+const exampleInputCod = document.getElementById("InputCod");
+
+const exampleInputProd = document.getElementById("InputProd");
+
+const exampleInputFab = document.getElementById("InputFab");
+
+const exampleInputMod = document.getElementById("InputMod");
+
+const exampleInputQnt = document.getElementById("InputQnt");
+
+const exampleInputValue = document.getElementById("InputValue");
+
 const btnInput = document.getElementById("btnInput");
 
+const data = [];
+
+
 btnInput.addEventListener('click', function (event) {
+
     event.preventDefault();
+
     const produto = {
         Nome: exampleInputProd.value,
         Cod: exampleInputCod.value,
@@ -9,14 +32,7 @@ btnInput.addEventListener('click', function (event) {
         Quantidade: exampleInputQnt.value,
         Valor: exampleInputValue.value,
     }
-    // Armazena os novos produtos no localStorage
-    let produtos = [produto]; // Armazenando o novo produto em um array
-    localStorage.setItem('produtos', JSON.stringify(produtos));
-    console.log(produtos); // Para verificar se os dados foram salvos corretamente
 
-    // Remover os itens existentes da tabela
-    const inventoryList = document.getElementById('inventory-list');
-    while (inventoryList.firstChild) {
-        inventoryList.removeChild(inventoryList.firstChild);
-    }
+    data.push(produto);
+    console.log(data);
 });
