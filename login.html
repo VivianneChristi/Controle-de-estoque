@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Controle de estoque | Login</title>
 </head>
-
 <body>
-    <form action="action_page.php" method="post">
+    <form id="loginForm">
         <div class="container">
-            <h1 class="fsl">Faça seu Login</h1>
-            <label for="uname"></label>
-            <input type="text" placeholder="CPF" name="uname" required>
+            <h1 class="login-header">Faça seu Login</h1>
+            <label for="username">CPF</label>
+            <input type="text" placeholder="CPF" name="username" id="username" required>
 
-            <label for="psw"></label>
-            <input type="password" placeholder="Senha" name="psw" required>
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Senha" name="password" id="password" required>
 
             <button type="submit">Entrar</button>
         </div>
@@ -29,5 +25,4 @@
 
     <script src="src/js/login.js"></script>
 </body>
-
 </html>
