@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/produtos.css">
+    <title>Gerenciamento de Estoque | Produto Selecionado</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="funcionario-info">
+            <img src="src/midia/foto-funcionario.jpg" alt="Foto do funcionário" class="foto-funcionario">
+            <a href="" class="nome-funcionario">Funcionario1</a>
+        </div>
+        <!-- Campo de pesquisa -->
+        <div class="pesquisar-container">
+            <button onclick="searchItems()"><img src="src/midia/icon-lupa.png" alt="Lupa" class="lupa"></button>
+            <input class="pesquisar" type="text" placeholder="Search">
+        </div>
+    </nav>
+    <h1>Produtos - Opção Selecionada</h1>
+
+    <table id="inventory-list">
+        <tr>
+            <th>Código</th>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Valor</th>
+        </tr>
+        <tr id="item-1">
+            <td>001</td>
+            <td>Item A</td>
+            <td>10</td>
+            <td>R$ 50,00</td>
+        </tr>
+        <tr id="item-2">
+            <td>002</td>
+            <td>Item B</td>
+            <td>5</td>
+            <td>R$ 30,00</td>
+        </tr>
+        <tr id="item-3">
+            <td>003</td>
+            <td>Item C</td>
+            <td>20</td>
+            <td>R$ 25,00</td>
+        </tr>
+        <tr id="item-4">
+            <td>004</td>
+            <td>Item D</td>
+            <td>10</td>
+            <td>R$ 50,00</td>
+        </tr>
+        <tr id="item-5">
+            <td>005</td>
+            <td>Item E</td>
+            <td>5</td>
+            <td>R$ 30,00</td>
+        </tr>
+        <tr id="item-6">
+            <td>006</td>
+            <td>Item F</td>
+            <td>20</td>
+            <td>R$ 25,00</td>
+        </tr>
+        <tr id="item-7">
+            <td>007</td>
+            <td>Item G</td>
+            <td>10</td>
+            <td>R$ 50,00</td>
+        </tr>
+        <tr id="item-8">
+            <td>008</td>
+            <td>Item H</td>
+            <td>5</td>
+            <td>R$ 30,00</td>
+        </tr>
+        <tr id="item-9">
+            <td>009</td>
+            <td>Item I</td>
+            <td>20</td>
+            <td>R$ 25,00</td>
+        </tr>
+        <tr id="item-10">
+            <td>010</td>
+            <td>Item J</td>
+            <td>20</td>
+            <td>R$ 25,00</td>
+        </tr>
+    </table>
+
+    <script src="src/js/produtos.js"></script>
+</body>
+
+</html>

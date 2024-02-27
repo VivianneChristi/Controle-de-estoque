@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #A1CCA5;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 90px;
+    padding: 10px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.funcionario-info {
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.foto-funcionario {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-right: 20px;
+    /* Espaçamento entre a foto e o nome */
+}
+
+.nome-funcionario {
+    color: black;
+}
+
+.pesquisar-container {
+    position: relative;
+}
+
+.pesquisar {
+    width: 250px;
+    padding: 6px 30px 6px 40px;
+    /* Ajuste do padding para acomodar a imagem */
+    border: 1px solid #A1CCA5;
+    border-radius: 15px;
+    background-color: #A1CCA5;
+    /* Fundo branco para a barra de pesquisa */
+    margin-right: 10px;
+}
+
+.lupa {
+    width: 16px;
+    height: auto;
+    position: absolute;
+    left: 10px;
+    /* Posicionamento absoluto à esquerda */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Main- parte principal da tela inicial*/
+
+/*Tag pai*/
+
+.pai {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+
+.titulo-principal {
+    color: white;
+}
+
+.seletor-produtos {
+    text-align: center;
+    background-color: #ffffff;
+    max-width: 284px;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-right: 1500px;
+    padding: 15px;
+
+}
+
+.titulo-seletor, 
+.titulo-cadastrar,
+.titulo-deletar {
+    color: #A1CCA5;
+    font-size: 50px;
+}
+
+.down-arrow {
+    width: 30px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto; /* Ajuste o tamanho da imagem conforme necessário */
+    margin-left: 5px; /* Adiciona um pequeno espaço entre a palavra "Produtos" e a imagem da seta */
+    cursor: pointer; /* Muda o cursor para indicar que o elemento é clicável */
+}
+
+/* Estilos CSS adicionais */
+.lista-produtos {
+    display: none;
+    /* Oculta a lista de produtos por padrão */
+    list-style-type: none;
+    /* Remove os marcadores de lista */
+    padding: 0;
+    /* Remove o preenchimento padrão da lista */
+    margin-top: 10px;
+    /* Adiciona um pequeno espaço entre o título e a lista de produtos */
+    color: #ffffff;
+}
+
+.lista-produtos li {
+    padding: 5px 0;
+    /* Adiciona um pequeno espaço vertical entre os itens da lista */
+    border-bottom: 1px solid rgb(255, 255, 255);
+    /* Adiciona uma linha divisória entre os itens da lista */
+}
+
+.cadastrar,
+.deletar{
+    text-align: center;
+    background-color: #ffffff;
+    max-width: 284px;
+    height: 70px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-right: 1500px;
+    margin-left: 80px;
+    padding: 15px;
+    margin-top: 120px;
+}

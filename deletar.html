@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/deletar.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="funcionario-info">
+                <img src="src/midia/foto-funcionario.jpg" alt="Foto do funcionário" class="foto-funcionario">
+                <a href="" class="nome-funcionario">Funcionario1</a>
+            </div>
+            <!-- Campo de pesquisa -->
+            <div class="pesquisar-container">
+                <img src="src/midia/icon-lupa.png" alt="Lupa" class="lupa">
+                <input class="pesquisar" type="text" placeholder="Search">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <form class="formulario">
+                <div class="ln1">
+                    <label for="inputCod" class="form-label">Código</label>
+                    <input type="text" class="form-control" id="exampleInputCod">
+                    <label for="InputProd" class="form-label">Produto</label>
+                    <input type="text" class="form-control" id="exampleInputProd">
+                </div>
+                <div class="ln3">
+                    <label for="InputMod" class="form-label">Modelo</label>
+                    <input type="text" class="form-control" id="exampleInputMod">
+                </div>
+                <div class="ln2">
+                    <label for="InputFab" class="form-label">Motivo da Exclusão do Produto</label>
+                    <input type="text" class="form-control" id="exampleInputFab">
+                </div>
+                <input class="btn" id="btn" type="submit" value="Salvar">
+            </form>
+        </div>
+    </main>
+
+    <script src="src/js/deletar.js"></script>
+</body>
+</html>

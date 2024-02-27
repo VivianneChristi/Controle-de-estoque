@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    background: #A1CCA5;
+}
+
+/* Bordered form */
+form {
+    background-color: white;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    width: 330px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 200px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+/* Full-width inputs */
+input[type=text],
+input[type=password] {
+    background-color: rgb(160, 160, 160);
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #a1a1a1;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #a19f9f;
+    color: #A1CCA5;
+    padding: 6px 10px;
+    margin: 30px;
+    margin-left: 200px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    opacity: 0.8;
+}
+
+/* Add padding to containers */
+.container {
+    padding: 16px;
+}
+
+.fsl {
+    text-align: center;
+}

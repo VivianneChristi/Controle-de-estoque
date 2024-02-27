@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Pagina Inicial</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="funcionario-info">
+                <img src="src/midia/foto-funcionario.jpg" alt="Foto do funcionário" class="foto-funcionario">
+                <a href="" class="nome-funcionario">Funcionario1</a>
+            </div>
+            <!-- Campo de pesquisa -->
+            <div class="pesquisar-container">
+                <img src="src/midia/icon-lupa.png" alt="Lupa" class="lupa">
+                <input class="pesquisar" type="text" placeholder="Search">
+            </div>
+        </nav>
+    </header>
+    <div class="pai">
+        <h1 class="titulo-principal">Seja Bem vindo (a) ao controle de estoque</h1>
+
+        <div class="seletor-produtos">
+            <p class="titulo-seletor">Produtos <img src="src/midia/down-arrow.png" alt="arrow-down" class="down-arrow" onclick="toggleListaProdutos()"></p>
+            <ul class="lista-produtos" id="listaProdutos" style="display: none;">
+                <li>Cozinha</li>
+                <li>Copa/Cozinha</li>
+                <li>Banheiro</li>
+                <!-- Adicione mais produtos conforme necessário -->
+            </ul>
+        </div>
+        
+    </div>
+    <div class="cadastrar">
+        <p class="titulo-cadastrar">Cadastrar </p>
+    </div>
+    <div class="deletar">
+        <p class="titulo-deletar">Deletar </p>
+    </div>
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>
